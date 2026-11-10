@@ -3,6 +3,10 @@
 
 #include "dados.h"
 
-void buscarDados(dados *x);
+int lerLinhas();
+
+void coletarComandos();
+
+void buscarDados(dados *x, int customer);
 
 #endif
