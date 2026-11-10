@@ -11,9 +11,9 @@ int main(/* int argc, char *argv[] */){
     x->v2=5;
     x->v3=7;
    int valor = lerLinhas();
-   int matriz[][valor];
+   
 
-    buscarDados(x, matriz);
+    //buscarDados(x, matriz);
     printf("Hello world");
     return 0;
 }

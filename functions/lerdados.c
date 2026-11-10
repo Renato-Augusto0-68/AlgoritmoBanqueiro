@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "dados.h"
 #include <stdlib.h>
+#include <string.h>
 #include "comandos.h"
 
 int lerLinhas(){
@@ -26,9 +27,16 @@ void coletarComandos(comandos *com){
     arq=fopen("commands.txt","r");
     com->valores=malloc(sizeof(int)*5);
     if(arq!=NULL){
-        fscanf(arq,"%s %d %d %d %d",com->com, com->valores[0],com->valores[1],
-            com->valores[2], com->valores[3]);
+        while(fscanf(arq,"%s %d %d %d",com->com,com->valores[0],com->valores[1],
+            com->valores[2], com->valores[3])!=EOF){
+            if(strcmp(com->com, "*")){
+
+            }else{
+
+            }
+        }
     }
+    fclose(arq);
 }
 
 
