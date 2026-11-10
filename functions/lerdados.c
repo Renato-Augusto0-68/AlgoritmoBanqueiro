@@ -26,7 +26,10 @@ void coletarComandos(comandos *com, dados *matriz){
     arq=fopen("commands.txt","r");
     com->valores=malloc(sizeof(int)*5);
     if(arq!=NULL){
-        int **necessario=malloc(sizeof(int));
+        int **necessario=malloc(sizeof(int*)*5);
+        for(int i=0;i<lerLinhas();i++){
+            necessario[i]=malloc(sizeof(int)*3);
+        }
         while(fscanf(arq,"%s",com->com)!=EOF){
             if(strcmp(com->com, "*")==0){
 
