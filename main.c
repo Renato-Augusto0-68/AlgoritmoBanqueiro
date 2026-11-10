@@ -10,7 +10,10 @@ int main(/* int argc, char *argv[] */){
     x->v1=10;
     x->v2=5;
     x->v3=7;
-    buscarDados(x);
+   int valor = lerLinhas();
+   int matriz[][valor];
+
+    buscarDados(x, matriz);
     printf("Hello world");
     return 0;
 }

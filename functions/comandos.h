@@ -3,7 +3,7 @@
 
 typedef struct comandos{
     char com[2];
-    
+    int *valores;
 }comandos;
 
 #endif
