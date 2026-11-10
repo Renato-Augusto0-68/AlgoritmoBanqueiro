@@ -21,7 +21,7 @@ int lerLinhas(){
 }
 
 
-void coletarComandos(comandos *com){
+void coletarComandos(comandos *com, dados *matriz){
     FILE *arq;
     arq=fopen("commands.txt","r");
     com->valores=malloc(sizeof(int)*5);
@@ -32,7 +32,7 @@ void coletarComandos(comandos *com){
             }else{
                 fscanf(arq,"%d %d %d %d",&com->valores[0],&com->valores[1],&com->valores[2], &com->valores[3]);
                 if(strcmp(com->com,"RQ")==0){
-                    
+                    matriz[com->valores[0]];
                 }
                 if(strcmp(com->com,"RL")==0){
 
@@ -48,11 +48,9 @@ void buscarDados(dados *matriz, int limit){
     FILE *arq;
     arq=fopen("customer.txt", "r");
     if(arq!=NULL){
-        for(int i=0;i<limit;i++){
-            while(fscanf(arq,"%d,%d,%d",&matriz[i].informacoes[],&matriz[i].v2,&matriz[i].v3)!=EOF && i<limit;i++){
-            }
+        for(int i=0; fscanf(arq,"%d,%d,%d",&matriz[i].informacoes[0],&matriz[i].informacoes[1],&matriz[i].informacoes[2])!=EOF && i<limit;i++){
+            
         }
-    
     }// tá tem
     fclose(arq);    
 }

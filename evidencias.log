@@ -157,4 +157,71 @@ In file included from [01m[Kmain.c:4[m[K:
 make: *** [makefile:2: banker] Error 1
 [?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
 [?2004lrm -f banker
-[?2004h]0;devcontainers@Pc
+[?2004h]0;devcontainers@PcScript started on 2026-11-10 13:39:23-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="177" LINES="16"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+s
+sa
+^Cmake: *** [makefile:5: run] Interrupt
+
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+7 5 3 3 2 2 9 0 2 2 2 2 4 3 3 Hello world[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+7 5 3 
+3 2 2 
+9 0 2 
+2 2 2 
+4 3 3 
+Hello world[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+7 5 3 
+3 2 2 
+9 0 2 
+2 2 2 
+4 3 3 
+00000Hello world[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+7 5 3 
+3 2 2 
+9 0 2 
+2 2 2 
+4 3 3 
+00000Hello world[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KcoletarComandos[m[K’:
+[01m[Kfunctions/lerdados.c:35:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   35 |                     matriz[com->valores[0]]
+      |                                            [01;31m[K^[m[K
+      |                                            [32m[K;[m[K
+   36 |                 [32m[K}[m[K
+      |                 [32m[K~[m[K                           
+[01m[Kfunctions/lerdados.c:40:15:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K/[m[K’ token
+   40 |             }*[01;31m[K/[m[K
+      |               [01;31m[K^[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:24:9:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[KcoletarComandos[m[K’; expected 2, have 1
+   24 |         [01;31m[KcoletarComandos[m[K(atuais);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[Kfunctions/lerdados.h:8:6:[m[K [01;36m[Knote: [m[Kdeclared here
+    8 | void [01;36m[KcoletarComandos[m[K(comandos *com, dados *matriz);
+      |      [01;36m[K^~~~~~~~~~~~~~~[m[K
+make: *** [makefile:2: banker] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KcoletarComandos[m[K’:
+[01m[Kfunctions
