@@ -28,13 +28,16 @@ void coletarComandos(comandos *com, dados *matriz){
     if(arq!=NULL){
         while(fscanf(arq,"%s",com->com)!=EOF){
             if(strcmp(com->com, "*")==0){
-
+                
             }else{
                 fscanf(arq,"%d %d %d %d",&com->valores[0],&com->valores[1],&com->valores[2], &com->valores[3]);
                 if(strcmp(com->com,"RQ")==0){
+                    printf("Allocate to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
                     matriz[com->valores[0]];
                 }
                 if(strcmp(com->com,"RL")==0){
+                    printf("Release to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
+                    matriz[com->valores[0]];
 
                 }
             }
