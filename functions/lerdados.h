@@ -6,7 +6,7 @@
 int lerLinhas();
 
 void coletarComandos(comandos *com);
-void buscarDados(dados *x, int customer, int **matriz, int limit);
+void buscarDados(dados *x, int limit);
 
 
 #endif

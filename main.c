@@ -6,10 +6,7 @@
 
 
 int main(/* int argc, char *argv[] */){
-    dados *x = malloc(sizeof(dados));
-    x->v1=10;
-    x->v2=5;
-    x->v3=7;
+    dados *x = malloc(sizeof(dados)*3);
    int valor = lerLinhas();
    
 
