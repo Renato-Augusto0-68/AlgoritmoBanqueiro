@@ -11,8 +11,19 @@ int main(/* int argc, char *argv[] */){
     for(int i=0;i<valor;i++)
         maximos[i].informacoes = malloc(sizeof(int)*3);
     buscarDados(maximos,valor);
+    for(int i=0;i<valor;i++)
+        maximos[i].informacoes = malloc(sizeof(int)*3);
+
+    int ** need = malloc(sizeof(int*)*valor);
+    if (*need!=NULL){
+        for(int i=0;i<valor;i++){
+            need[i]=malloc(sizeof(int)*3);
+        }
+    }
+
     
 
+    
 
     comandos *atuais=malloc(sizeof(comandos)*valor);
     if(atuais!=NULL){

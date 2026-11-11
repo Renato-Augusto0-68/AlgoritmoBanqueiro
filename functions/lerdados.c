@@ -20,6 +20,12 @@ int lerLinhas(){
     return i;
 }
 
+int verificarConta(){
+
+    
+}
+
+
 
 void coletarComandos(comandos *com, dados *matriz){
     FILE *arq;

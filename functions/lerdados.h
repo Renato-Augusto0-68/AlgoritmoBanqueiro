@@ -5,6 +5,7 @@
 #include "comandos.h"
 
 int lerLinhas();
+int verificarConta();
 void coletarComandos(comandos *com, dados *matriz);
 void buscarDados(dados *x, int limit);
 
