@@ -6,7 +6,7 @@
 
 int lerLinhas();
 int verificarConta(comandos *com, int **need,dados *matriz);
-void coletarComandos(comandos *com, dados *matriz, int **need);
+void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel);
 void buscarDados(dados *x, int limit);
 
 

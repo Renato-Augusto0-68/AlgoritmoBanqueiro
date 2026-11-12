@@ -8,6 +8,10 @@
 int main(/* int argc, char *argv[] */){
     int valor = lerLinhas();
     dados maximos[valor];
+    int disponivel[3];
+    disponivel[0]=10;
+    disponivel[1]=5;
+    disponivel[2]=7;
     for(int i=0;i<valor;i++)
         maximos[i].informacoes = malloc(sizeof(int)*3);
     buscarDados(maximos,valor);
@@ -31,7 +35,7 @@ int main(/* int argc, char *argv[] */){
     }
 
     if(atuais!=NULL){
-        coletarComandos(atuais,maximos,need);
+        coletarComandos(atuais,maximos,need,disponivel);
     }   
     return 0;
 }

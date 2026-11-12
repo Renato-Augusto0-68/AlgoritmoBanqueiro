@@ -35,29 +35,49 @@ int verificarConta(comandos *com,int **need,dados *matriz){
 
 
 
-void coletarComandos(comandos *com, dados *matriz, int **need){
+void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     FILE *arq;
     arq=fopen("commands.txt","r");
-    com->valores=calloc(sizeof(int),3);
+    com->valores=calloc(sizeof(int),4);
     if(arq!=NULL){
-        
         while(fscanf(arq,"%s",com->com)!=EOF){
             if(strcmp(com->com, "*")==0){
-
+                printf("MAXIMUM | ALLOCATION | NEED\n");
+                for(int i=0;i<5;i++){
+                    for(int g=0;g<3;g++){
+                        printf("%d ", matriz[i].informacoes[g]);
+                    }
+                    printf("| ");
+                    for(int g=0;g<3;g++){
+                        printf("%d ", need[i][g]);
+                    } 
+                    printf("| ");
+                    for(int g=0;g<3;g++){
+                        printf("%d ", matriz[i].informacoes[g]-need[i][g]);
+                    } 
+                    printf("\n");
+                }
+                printf("AVAILABLE");
+                for(int i=0;i<3;i++){
+                    printf("%d ",disponivel[i]);
+                }
+                printf("\n");
             }else{
                 fscanf(arq,"%d %d %d %d",&com->valores[0],&com->valores[1],&com->valores[2], &com->valores[3]);
                 if(strcmp(com->com,"RQ")==0){
                     if(verificarConta(&com[com->valores[0]],need,&matriz[com->valores[0]])){
                         printf("Allocate to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
                         for(int j=0;j<3;j++){
-                            need[com->valores[0]][j]=(com->valores[j+1] - (matriz[com->valores[0]].informacoes[j]));
+                            need[com->valores[0]][j]+=( com->valores[j+1]);
+                            disponivel[j]-=com->valores[j+1];      
                         }
                     }
                 }if(strcmp(com->com,"RL")==0){
                     if(verificarConta(&com[com->valores[0]], need,&matriz[com->valores[0]])){
                         printf("Release to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
                         for(int j=0;j<3;j++){
-                            need[com->valores[0]][j]+=(com->valores[j+1]);
+                            need[com->valores[0]][j]-=(com->valores[j+1]);
+                            disponivel[j]+=(com->valores[j+1]);
                         }
                     }
                 }
