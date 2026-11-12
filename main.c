@@ -21,13 +21,17 @@ int main(/* int argc, char *argv[] */){
         }
     }
 
-    
+
 
     
 
     comandos *atuais=malloc(sizeof(comandos)*valor);
+    for(int i=0;i<valor;i++){
+        atuais[i].valores=malloc(sizeof(int)*(3+1));
+    }
+
     if(atuais!=NULL){
-        coletarComandos(atuais,maximos);
+        coletarComandos(atuais,maximos,need);
     }   
     return 0;
 }
