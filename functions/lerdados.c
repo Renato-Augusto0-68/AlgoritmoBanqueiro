@@ -38,7 +38,7 @@ int verificarConta(comandos *com,int **need,dados *matriz){
 void coletarComandos(comandos *com, dados *matriz, int **need){
     FILE *arq;
     arq=fopen("commands.txt","r");
-    com->valores=malloc(sizeof(int)*);
+    com->valores=calloc(sizeof(int),3);
     if(arq!=NULL){
         
         while(fscanf(arq,"%s",com->com)!=EOF){
@@ -47,13 +47,18 @@ void coletarComandos(comandos *com, dados *matriz, int **need){
             }else{
                 fscanf(arq,"%d %d %d %d",&com->valores[0],&com->valores[1],&com->valores[2], &com->valores[3]);
                 if(strcmp(com->com,"RQ")==0){
-                    printf("Allocate to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
-                    matriz[com->valores[0]];
-                }
-                if(strcmp(com->com,"RL")==0){
+                    if(verificarConta(&com[com->valores[0]],need,&matriz[com->valores[0]])){
+                        printf("Allocate to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
+                        for(int j=0;j<3;j++){
+                            need[com->valores[0]][j]=(com->valores[j+1] - (matriz[com->valores[0]].informacoes[j]));
+                        }
+                    }
+                }if(strcmp(com->com,"RL")==0){
                     if(verificarConta(&com[com->valores[0]], need,&matriz[com->valores[0]])){
                         printf("Release to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
-                        need[com->valores[0]]+=(com->valores[]);
+                        for(int j=0;j<3;j++){
+                            need[com->valores[0]][j]+=(com->valores[j+1]);
+                        }
                     }
                 }
             }
