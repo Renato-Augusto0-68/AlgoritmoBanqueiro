@@ -451,4 +451,222 @@ make: *** [makefile:2: banker] Error 1
       |                                    [01;32m[Kint *[m[K                                             [01;34m[Kint[m[K
 [01m[Kfunctions/lerdados.c:66:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint *[m[K[m[K’, but argument 6 has type ‘[01m[K[01;34m[Kint[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
    66 |                 fscanf(arq,"%d %d %d [01;32m[K%[m[K[01;32m[Kd[m[K",com->valores[0],com->valores[1],com->valores[2], [01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K-[m[K[01;34m[K>[m[K[01;34m[Kv[m[K[01;34m[Ka[m[K[01;34m[Kl[m[K[01;34m[Ko[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[K[[m[K[01;34m[K3[m[K[01;34m[K][m[K);
-      |                                      [01;32m[K~[m[K[01;32m[K^[m[K                                                   [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m
+      |                                      [01;32m[K~[m[K[01;32m[K^[m[K                                                   [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                                       [01;32m[K|[m[K                                                               [01;34m[K|[m[K
+      |                                       [01;32m[Kint *[m[K                                                           [01;34m[Kint[m[K
+./banker
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+AVAILABLE3 3 2 
+Allocate to customer 4 the resources 4 0 0
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+AVAILABLE 3 3 2 
+Allocate to customer 4 the resources 4 0 0
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 0 
+3 2 2 | 2 0 0 | 1 2 2 0 
+9 0 2 | 3 0 2 | 6 0 0 0 
+2 2 2 | 2 1 1 | 0 1 1 0 
+AVAILABLE 3 3 2 486539306 
+Allocate to customer 4 the resources 4 0 0
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 0 
+3 2 2 | 2 0 0 | 1 2 2 0 
+9 0 2 | 3 0 2 | 6 0 0 0 
+2 2 2 | 2 1 1 | 0 1 1 0 
+AVAILABLE 3 3 2 -67108822 
+Allocate to customer 4 the resources 4 0 0
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 0 | 0 1 0 0 | 7 4 3 0 
+3 2 2 0 | 2 0 0 0 | 1 2 2 0 
+9 0 2 0 | 3 0 2 0 | 6 0 0 0 
+2 2 2 0 | 2 1 1 0 | 0 1 1 0 
+AVAILABLE 3 3 2 
+Allocate to customer 4 the resources 4 0 0
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 0 | 7 4 3 0 
+3 2 2 | 2 0 0 0 | 1 2 2 0 
+9 0 2 | 3 0 2 0 | 6 0 0 0 
+2 2 2 | 2 1 1 0 | 0 1 1 0 
+4 3 3 | 0 0 2 0 | 4 3 1 0 
+AVAILABLE 3 3 2 
+Allocate to customer 4 the resources 4 0 0
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 0 | 7 4 3 0 
+3 2 2 | 2 0 0 0 | 1 2 2 0 
+9 0 2 | 3 0 2 0 | 6 0 0 0 
+2 2 2 | 2 1 1 0 | 0 1 1 0 
+4 3 3 | 0 0 2 0 | 4 3 1 0 
+AVAILABLE 3 3 2 
+Allocate to customer 4 the resources 4 0 0
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+A

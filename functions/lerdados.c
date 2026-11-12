@@ -38,12 +38,11 @@ int verificarConta(comandos *com,int **need,dados *matriz){
 void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     FILE *arq;
     arq=fopen("commands.txt","r");
-    
     if(arq!=NULL){
         while(fscanf(arq,"%s",com->com)!=EOF){
             if(strcmp(com->com, "*")==0){
                 printf("MAXIMUM | ALLOCATION | NEED\n");
-                for(int i=0;i<4;i++){
+                for(int i=0;i<5;i++){
                     for(int g=0;g<3;g++){
                         printf("%d ", matriz[i].informacoes[g]);
                     }
@@ -57,7 +56,7 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
                     } 
                     printf("\n");
                 }
-                printf("AVAILABLE");
+                printf("AVAILABLE ");
                 for(int i=0;i<3;i++){
                     printf("%d ",disponivel[i]);
                 }
