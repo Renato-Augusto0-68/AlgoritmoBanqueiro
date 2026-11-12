@@ -32,21 +32,23 @@ int verificarConta(comandos *com,int **need,dados *matriz){
     }
     for(int i=0;i<3;i++){
         if(com->valores[i+1]>need[i]){
-            printf("The resources "); 
-            for(int g=0;g<3;g++)
-                printf("%d ", need[i]); 
-            printf("are not enough to customer %d request ", com->valores[0]);
-            for(int g=0;g<3;g++)
-                printf("%d ", com->valores[i+1]); 
-            break;
+            if(com->valores[i+1]>){
+
+            }else{
+                printf("The resources "); 
+                for(int g=0;g<3;g++)
+                    printf("%d ", need[i]); 
+                printf("are not enough to customer %d request ", com->valores[0]);
+                for(int g=0;g<3;g++)
+                    printf("%d ", com->valores[i+1]); 
+                
+            }
+        break;
         }
         if(){
-            printf("");
-            break;
+
+
         }
-
-
-    }
     return 0;
 }
 
