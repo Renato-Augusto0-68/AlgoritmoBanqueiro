@@ -15,25 +15,15 @@ int main(/* int argc, char *argv[] */){
     for(int i=0;i<valor;i++)
         maximos[i].informacoes = malloc(sizeof(int)*3);
     buscarDados(maximos,valor);
-    for(int i=0;i<valor;i++)
-        maximos[i].informacoes = malloc(sizeof(int)*3);
-
-    int ** need = malloc(sizeof(int*)*valor);
+    int ** need = calloc(sizeof(int*),valor);
     if (*need!=NULL){
         for(int i=0;i<valor;i++){
-            need[i]=malloc(sizeof(int)*3);
+            need[i]=calloc(sizeof(int),3);
         }
     }
 
-
-
-    
-
-    comandos *atuais=malloc(sizeof(comandos)*valor);
-    for(int i=0;i<valor;i++){
-        atuais[i].valores=malloc(sizeof(int)*(3+1));
-    }
-
+    comandos *atuais;
+    atuais->valores=calloc(sizeof(int),(3+1));
     if(atuais!=NULL){
         coletarComandos(atuais,maximos,need,disponivel);
     }   

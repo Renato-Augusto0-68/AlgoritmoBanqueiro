@@ -292,3 +292,163 @@ Script done on 2026-11-10 16:11:43-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-11-10 17:08:26-03:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="177" LINES="16"]
 [?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ 
 Script done on 2026-11-10 20:45:56-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-12 07:51:40-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="177" LINES="16"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KcoletarComandos[m[K’:
+[01m[Kfunctions/lerdados.c:48:34:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects a matching ‘[01m[K[01;32m[Kint[m[K[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   48 |                         printf("[01;32m[K%[m[K[01;32m[Kd[m[K ");
+      |                                 [01;32m[K~[m[K[01;32m[K^[m[K
+      |                                  [01;32m[K|[m[K
+      |                                  [01;32m[Kint[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KcoletarComandos[m[K’:
+[01m[Kfunctions/lerdados.c:60:24:[m[K [01;35m[Kwarning: [m[Kzero-length gnu_printf format string [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-zero-length-Wformat-zero-length]8;;[m[K]
+   60 |                 printf([01;35m[K""[m[K);
+      |                        [01;35m[K^~[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KcoletarComandos[m[K’:
+[01m[Kfunctions/lerdados.c:76:42:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 1 of ‘[01m[KverificarConta[m[K’
+   76 |                     if(verificarConta([01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K[[m[K[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K-[m[K[01;34m[K>[m[K[01;34m[Kv[m[K[01;34m[Ka[m[K[01;34m[Kl[m[K[01;34m[Ko[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[K[[m[K[01;34m[K0[m[K[01;34m[K][m[K[01;34m[K][m[K, need,&matriz[com->valores[0]])){
+      |                                       [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K^[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                                          [01;34m[K|[m[K
+      |                                          [01;34m[Kcomandos[m[K
+[01m[Kfunctions/lerdados.c:23:30:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kcomandos *[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kcomandos[m[K[m[K’
+   23 | int verificarConta([01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Km[m[K[01;32m[Ka[m[K[01;32m[Kn[m[K[01;32m[Kd[m[K[01;32m[Ko[m[K[01;32m[Ks[m[K[01;32m[K [m[K[01;32m[K*[m[K[01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Km[m[K,int **need,dados *matriz){
+      |                    [01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K^[m[K[01;32m[K~[m[K[01;32m[K~[m[K
+make: *** [makefile:2: banker] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:23:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[KverificarConta[m[K’; have ‘[01m[Kint(comandos **, int **, dados *)[m[K’
+   23 | int [01;31m[KverificarConta[m[K(comandos **com,int **need,dados *matriz){
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[Kfunctions/lerdados.c:1[m[K:
+[01m[Kfunctions/lerdados.h:8:5:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[KverificarConta[m[K’ with type ‘[01m[Kint(comandos *, int **, dados *)[m[K’
+    8 | int [01;36m[KverificarConta[m[K(comandos *com, int **need,dados *matriz);
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:26:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kcom[m[K’ is a pointer to pointer; did you mean to dereference it before applying ‘[01m[K->[m[K’ to it?
+   26 |         if((com[01;31m[K->[m[Kvalores[1+i])<=(matriz->informacoes[i])){
+      |                [01;31m[K^~[m[K
+      |             [32m[K(*[m[K [32m[K)[m[K
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KcoletarComandos[m[K’:
+[01m[Kfunctions/lerdados.c:68:39:[m[K [01;31m[Kerror: [m[Kpassing argument 1 of ‘[01m[KverificarConta[m[K’ from incompatible pointer type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   68 |                     if(verificarConta([01;34m[K&[m[K[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K[[m[K[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K-[m[K[01;34m[K>[m[K[01;34m[Kv[m[K[01;34m[Ka[m[K[01;34m[Kl[m[K[01;34m[Ko[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[K[[m[K[01;34m[K0[m[K[01;34m[K][m[K[01;34m[K][m[K,need,&matriz[com->valores[0]])){
+      |                                       [01;34m[K^[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                                       [01;34m[K|[m[K
+      |                                       [01;34m[Kcomandos *[m[K
+[01m[Kfunctions/lerdados.c:23:31:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kcomandos **[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kcomandos *[m[K[m[K’
+   23 | int verificarConta([01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Km[m[K[01;32m[Ka[m[K[01;32m[Kn[m[K[01;32m[Kd[m[K[01;32m[Ko[m[K[01;32m[Ks[m[K[01;32m[K [m[K[01;32m[K*[m[K[01;32m[K*[m[K[01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Km[m[K,int **need,dados *matriz){
+      |                    [01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K^[m[K[01;32m[K~[m[K[01;32m[K~[m[K
+[01m[Kfunctions/lerdados.c:76:39:[m[K [01;31m[Kerror: [m[Kpassing argument 1 of ‘[01m[KverificarConta[m[K’ from incompatible pointer type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   76 |                     if(verificarConta([01;34m[K&[m[K[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K[[m[K[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K-[m[K[01;34m[K>[m[K[01;34m[Kv[m[K[01;34m[Ka[m[K[01;34m[Kl[m[K[01;34m[Ko[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[K[[m[K[01;34m[K0[m[K[01;34m[K][m[K[01;34m[K][m[K, need,&matriz[com->valores[0]])){
+      |                                       [01;34m[K^[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                                       [01;34m[K|[m[K
+      |                                       [01;34m[Kcomandos *[m[K
+[01m[Kfunctions/lerdados.c:23:31:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kcomandos **[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kcomandos *[m[K[m[K’
+   23 | int verificarConta([01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Km[m[K[01;32m[Ka[m[K[01;32m[Kn[m[K[01;32m[Kd[m[K[01;32m[Ko[m[K[01;32m[Ks[m[K[01;32m[K [m[K[01;32m[K*[m[K[01;32m[K*[m[K[01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Km[m[K,int **need,dados *matriz){
+      |                    [01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K^[m[K[01;32m[K~[m[K[01;32m[K~[m[K
+make: *** [makefile:2: banker] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:23:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[KverificarConta[m[K’; have ‘[01m[Kint(comandos **, int **, dados *)[m[K’
+   23 | int [01;31m[KverificarConta[m[K(comandos **com,int **need,dados *matriz){
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[Kfunctions/lerdados.c:1[m[K:
+[01m[Kfunctions/lerdados.h:8:5:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[KverificarConta[m[K’ with type ‘[01m[Kint(comandos *, int **, dados *)[m[K’
+    8 | int [01;36m[KverificarConta[m[K(comandos *com, int **need,dados *matriz);
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:26:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kcom[m[K’ is a pointer to pointer; did you mean to dereference it before applying ‘[01m[K->[m[K’ to it?
+   26 |         if((com[01;31m[K->[m[Kvalores[1+i])<=(matriz->informacoes[i])){
+      |                [01;31m[K^~[m[K
+      |             [32m[K(*[m[K [32m[K)[m[K
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KcoletarComandos[m[K’:
+[01m[Kfunctions/lerdados.c:68:39:[m[K [01;31m[Kerror: [m[Kpassing argument 1 of ‘[01m[KverificarConta[m[K’ from incompatible pointer type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   68 |                     if(verificarConta([01;34m[K&[m[K[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K[[m[K[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K-[m[K[01;34m[K>[m[K[01;34m[Kv[m[K[01;34m[Ka[m[K[01;34m[Kl[m[K[01;34m[Ko[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[K[[m[K[01;34m[K0[m[K[01;34m[K][m[K[01;34m[K][m[K,need,&matriz[com->valores[0]])){
+      |                                       [01;34m[K^[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                                       [01;34m[K|[m[K
+      |                                       [01;34m[Kcomandos *[m[K
+[01m[Kfunctions/lerdados.c:23:31:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kcomandos **[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kcomandos *[m[K[m[K’
+   23 | int verificarConta([01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Km[m[K[01;32m[Ka[m[K[01;32m[Kn[m[K[01;32m[Kd[m[K[01;32m[Ko[m[K[01;32m[Ks[m[K[01;32m[K [m[K[01;32m[K*[m[K[01;32m[K*[m[K[01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Km[m[K,int **need,dados *matriz){
+      |                    [01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K^[m[K[01;32m[K~[m[K[01;32m[K~[m[K
+[01m[Kfunctions/lerdados.c:76:39:[m[K [01;31m[Kerror: [m[Kpassing argument 1 of ‘[01m[KverificarConta[m[K’ from incompatible pointer type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   76 |                     if(verificarConta([01;34m[K&[m[K[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K[[m[K[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K-[m[K[01;34m[K>[m[K[01;34m[Kv[m[K[01;34m[Ka[m[K[01;34m[Kl[m[K[01;34m[Ko[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[K[[m[K[01;34m[K0[m[K[01;34m[K][m[K[01;34m[K][m[K, need,&matriz[com->valores[0]])){
+      |                                       [01;34m[K^[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                                       [01;34m[K|[m[K
+      |                                       [01;34m[Kcomandos *[m[K
+[01m[Kfunctions/lerdados.c:23:31:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kcomandos **[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kcomandos *[m[K[m[K’
+   23 | int verificarConta([01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Km[m[K[01;32m[Ka[m[K[01;32m[Kn[m[K[01;32m[Kd[m[K[01;32m[Ko[m[K[01;32m[Ks[m[K[01;32m[K [m[K[01;32m[K*[m[K[01;32m[K*[m[K[01;32m[Kc[m[K[01;32m[Ko[m[K[01;32m[Km[m[K,int **need,dados *matriz){
+      |                    [01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K~[m[K[01;32m[K^[m[K[01;32m[K~[m[K[01;32m[K~[m[K
+make: *** [makefile:2: banker] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C[2Pru[C[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KcoletarComandos[m[K’:
+[01m[Kfunctions/lerdados.c:66:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint *[m[K[m[K’, but argument 3 has type ‘[01m[K[01;34m[Kint[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   66 |                 fscanf(arq,"[01;32m[K%[m[K[01;32m[Kd[m[K %d %d %d",[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K-[m[K[01;34m[K>[m[K[01;34m[Kv[m[K[01;34m[Ka[m[K[01;34m[Kl[m[K[01;34m[Ko[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[K[[m[K[01;34m[K0[m[K[01;34m[K][m[K,com->valores[1],com->valores[2], com->valores[3]);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K           [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K                       [01;34m[K|[m[K
+      |                              [01;32m[Kint *[m[K                   [01;34m[Kint[m[K
+[01m[Kfunctions/lerdados.c:66:33:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint *[m[K[m[K’, but argument 4 has type ‘[01m[K[01;34m[Kint[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   66 |                 fscanf(arq,"%d [01;32m[K%[m[K[01;32m[Kd[m[K %d %d",com->valores[0],[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K-[m[K[01;34m[K>[m[K[01;34m[Kv[m[K[01;34m[Ka[m[K[01;34m[Kl[m[K[01;34m[Ko[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[K[[m[K[01;34m[K1[m[K[01;34m[K][m[K,com->valores[2], com->valores[3]);
+      |                                [01;32m[K~[m[K[01;32m[K^[m[K                        [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                                 [01;32m[K|[m[K                                    [01;34m[K|[m[K
+      |                                 [01;32m[Kint *[m[K                                [01;34m[Kint[m[K
+[01m[Kfunctions/lerdados.c:66:36:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint *[m[K[m[K’, but argument 5 has type ‘[01m[K[01;34m[Kint[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   66 |                 fscanf(arq,"%d %d [01;32m[K%[m[K[01;32m[Kd[m[K %d",com->valores[0],com->valores[1],[01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K-[m[K[01;34m[K>[m[K[01;34m[Kv[m[K[01;34m[Ka[m[K[01;34m[Kl[m[K[01;34m[Ko[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[K[[m[K[01;34m[K2[m[K[01;34m[K][m[K, com->valores[3]);
+      |                                   [01;32m[K~[m[K[01;32m[K^[m[K                                     [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                                    [01;32m[K|[m[K                                                 [01;34m[K|[m[K
+      |                                    [01;32m[Kint *[m[K                                             [01;34m[Kint[m[K
+[01m[Kfunctions/lerdados.c:66:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint *[m[K[m[K’, but argument 6 has type ‘[01m[K[01;34m[Kint[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   66 |                 fscanf(arq,"%d %d %d [01;32m[K%[m[K[01;32m[Kd[m[K",com->valores[0],com->valores[1],com->valores[2], [01;34m[Kc[m[K[01;34m[Ko[m[K[01;34m[Km[m[K[01;34m[K-[m[K[01;34m[K>[m[K[01;34m[Kv[m[K[01;34m[Ka[m[K[01;34m[Kl[m[K[01;34m[Ko[m[K[01;34m[Kr[m[K[01;34m[Ke[m[K[01;34m[Ks[m[K[01;34m[K[[m[K[01;34m[K3[m[K[01;34m[K][m[K);
+      |                                      [01;32m[K~[m[K[01;32m[K^[m[K                                                   [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m
