@@ -21,34 +21,33 @@ int lerLinhas(){
 }
 
 int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel){
-    
+    int id_cliente = com->valores[0];
     for(int i=0;i<3;i++){
-        if(com->valores[i+1]>need[com->valores[0]][i]){
-            if(com->valores[i+1]>disponivel[i]){
-              printf("The customer %d request", com->valores[0]);
+        if(com->valores[i+1]>need[i]){
+             printf("The customer %d request ", id_cliente);
               for(int j=0;j<3;j++){
                 printf("%d ",com->valores[j+1]);
               }
               printf("was denied because exceed its maximum allocation\n");
-            }else{
-                printf("The resources "); 
-                for(int g=0;g<3;g++)
-                    printf("%d ", need[i][g]); 
-                printf("are not enough to customer %d request ", com->valores[0]);
-                for(int g=0;g<3;g++)
-                    printf("%d ", com->valores[i+1]); 
-                printf("\n");
-            }
-        return 0;
+              return 0;   
         }
-        if((com->valores[i+1]-need[com->valores[0]][i]==0)&&(com->valores[i+1]-disponivel[i]==0)){
-            printf("The customer %d request ",com->valores[0]);
+        if(com->valores[i+1]>disponivel[i]){
+            printf("The resources "); 
+                for(int g=0;g<3;g++)
+                    printf("%d ", disponivel[g]); 
+                printf("are not enough to customer %d request ", id_cliente);
+                for(int g=0;g<3;g++)
+                    printf("%d ", com->valores[g+1]); 
+                printf("\n");
+                 return 0; 
+        }
+        if((com->valores[i+1]-need[id_cliente][i]==0)&&(com->valores[i+1]-disponivel[i]==0)){
+            printf("The customer %d request ",id_cliente);
             for(int i=0;i<3;i++){
                 printf("%d ",com->valores[i+1]);
             } 
             printf("was denied because result in an unsafe state\n");
             return 0;
-
         }
     }
     return 1;    

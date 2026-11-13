@@ -1576,4 +1576,1216 @@ MAXIMUM | ALLOCATION | NEED
 2 2 2 | 0 0 0 | 2 2 2 
 4 3 3 | 0 0 0 | 4 3 3 
 AVAILABLE 10 5 7 
-The resou
+The resources 0 0 0 are not enough to customer 4 request 4 4 4 
+The resources 0 0 0 are not enough to customer 1 request 1 1 1 
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 1 1 1 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:26:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   26 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+[01m[Kfunctions/lerdados.c:36:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   36 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+Allocate to customer 4 the resources 4 0 0
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:34:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   34 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The customer 4 request4 0 0 was denied because exceed its maximum allocation
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+The resources 771409376 771409376 771409376 are not enough to customer 0 request 2 2 2 
+The resources 771409344 771409344 771409344 are not enough to customer 2 request 3 3 3 
+The resources 771409344 771409344 771409344 are not enough to customer 1 request 2 2 2 
+The resources 771409408 771409408 771409408 are not enough to customer 4 request 2 2 2 
+The resources 771409376 771409376 771409376 are not enough to customer 0 request 1 1 1 
+The resources 771409344 771409344 771409344 are not enough to customer 3 request 2 2 2 
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The resources 771409344 771409344 771409344 are not enough to customer 4 request 4 4 4 
+The resources 771409344 771409344 771409344 are not enough to customer 1 request 1 1 1 
+The resources 771409376 771409376 771409376 are not enough to customer 0 request 2 2 2 
+The resources 771409376 771409376 771409376 are not enough to customer 2 request 1 1 1 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+The resources -1354316320 -1354316320 -1354316320 are not enough to customer 0 request 2 2 2 
+The resources -1354316352 -1354316352 -1354316352 are not enough to customer 2 request 3 3 3 
+The resources -1354316352 -1354316352 -1354316352 are not enough to customer 1 request 2 2 2 
+The resources -1354316288 -1354316288 -1354316288 are not enough to customer 4 request 2 2 2 
+The resources -1354316320 -1354316320 -1354316320 are not enough to customer 0 request 1 1 1 
+The resources -1354316352 -1354316352 -1354316352 are not enough to customer 3 request 2 2 2 
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The resources -1354316352 -1354316352 -1354316352 are not enough to customer 4 request 4 4 4 
+The resources -1354316352 -1354316352 -1354316352 are not enough to customer 1 request 1 1 1 
+The resources -1354316320 -1354316320 -1354316320 are not enough to customer 0 request 2 2 2 
+The resources -1354316320 -1354316320 -1354316320 are not enough to customer 2 request 1 1 1 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:34:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   34 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The customer 4 request4 0 0 was denied because exceed its maximum allocation
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:34:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   34 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The customer 4 request4 0 0 was denied because exceed its maximum allocation
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0  was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:34:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   34 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The customer 4 request4 0 0 was denied because exceed its maximum allocation
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request  0  2  0  was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:34:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   34 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request0 2 0  was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:34:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   34 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0  was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:34:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   34 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/devScript started on 2026-11-13 07:31:39-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="177" LINES="20"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:34:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   34 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:34:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   34 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+[01m[Kfunctions/lerdados.c:37:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   37 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:36:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   36 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Ki[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+./banker
+The resources -1030674976 -1030674976 -1030674976 are not enough to customer 0 request 2 2 2 
+The resources -1030675008 -1030675008 -1030675008 are not enough to customer 2 request 3 3 3 
+The resources -1030675008 -1030675008 -1030675008 are not enough to customer 1 request 2 2 2 
+The resources -1030674944 -1030674944 -1030674944 are not enough to customer 4 request 2 2 2 
+The resources -1030674976 -1030674976 -1030674976 are not enough to customer 0 request 1 1 1 
+The resources -1030675008 -1030675008 -1030675008 are not enough to customer 3 request 2 2 2 
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The resources -1030675008 -1030675008 -1030675008 are not enough to customer 4 request 4 4 4 
+The resources -1030675008 -1030675008 -1030675008 are not enough to customer 1 request 1 1 1 
+The resources -1030674976 -1030674976 -1030674976 are not enough to customer 0 request 2 2 2 
+The resources -1030674976 -1030674976 -1030674976 are not enough to customer 2 request 1 1 1 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 3 3 3 
+The resources 0 0 0 are not enough to customer 1 request 2 2 2 
+The resources 0 0 0 are not enough to customer 4 request 2 2 2 
+The resources 0 0 0 are not enough to customer 0 request 1 1 1 
+The resources 0 0 0 are not enough to customer 3 request 2 2 2 
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The resources 0 0 0 are not enough to customer 4 request 4 4 4 
+The resources 0 0 0 are not enough to customer 1 request 1 1 1 
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 1 1 1 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 3 3 3 
+The resources 0 0 0 are not enough to customer 1 request 2 2 2 
+The resources 0 0 0 are not enough to customer 4 request 2 2 2 
+The resources 0 0 0 are not enough to customer 0 request 1 1 1 
+The resources 0 0 0 are not enough to customer 3 request 2 2 2 
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The resources 0 0 0 are not enough to customer 4 request 4 4 4 
+The resources 0 0 0 are not enough to customer 1 request 1 1 1 
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 1 1 1 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 3 3 3 
+The resources 0 0 0 are not enough to customer 1 request 2 2 2 
+The resources 0 0 0 are not enough to customer 4 request 2 2 2 
+The resources 0 0 0 are not enough to customer 0 request 1 1 1 
+The resources 0 0 0 are not enough to customer 3 request 2 2 2 
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The resources 0 0 0 are not enough to customer 4 request 4 4 4 
+The resources 0 0 0 are not enough to customer 1 request 1 1 1 
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 1 1 1 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 3 3 3 
+The resources 0 0 0 are not enough to customer 1 request 2 2 2 
+The resources 0 0 0 are not enough to customer 4 request 2 2 2 
+The resources 0 0 0 are not enough to customer 0 request 1 1 1 
+The resources 0 0 0 are not enough to customer 3 request 2 2 2 
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The resources 0 0 0 are not enough to customer 4 request 4 4 4 
+The resources 0 0 0 are not enough to customer 1 request 1 1 1 
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 1 1 1 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 3 3 3 
+The resources 0 0 0 are not enough to customer 1 request 2 2 2 
+The resources 0 0 0 are not enough to customer 4 request 2 2 2 
+The resources 0 0 0 are not enough to customer 0 request 1 1 1 
+The resources 0 0 0 are not enough to customer 3 request 2 2 2 
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The resources 0 0 0 are not enough to customer 4 request 4 4 4 
+The resources 0 0 0 are not enough to customer 1 request 1 1 1 
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 1 1 1 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 3 3 3 
+The resources 0 0 0 are not enough to customer 1 request 2 2 2 
+The resources 0 0 0 are not enough to customer 4 request 2 2 2 
+The resources 0 0 0 are not enough to customer 0 request 1 1 1 
+The resources 0 0 0 are not enough to customer 3 request 2 2 2 
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The resources 0 0 0 are not enough to customer 4 request 4 4 4 
+The resources 0 0 0 are not enough to customer 1 request 1 1 1 
+The resources 0 0 0 are not enough to customer 0 request 2 2 2 
+The resources 0 0 0 are not enough to customer 2 request 1 1 1 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:33:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   33 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:35:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   35 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 0 0 2 are not enough to customer 4 request 4 4 4 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:28:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   28 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Kg[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+[01m[Kfunctions/lerdados.c:35:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   35 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources -113474112 -113474080 -113474048 are not enough to customer 4 request 4 4 4 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:28:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   28 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Kg[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+[01m[Kfunctions/lerdados.c:35:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   35 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources -2130201152 -2130201120 -2130201088 are not enough to customer 4 request 4 4 4 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:35:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   35 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 0 0 2 are not enough to customer 4 request 4 4 4 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:35:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   35 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 0 0 2 are not enough to customer 4 request 4 4 4 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:28:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   28 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Kg[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+[01m[Kfunctions/lerdados.c:35:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   35 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources -1159756352 -1159756320 -1159756288 are not enough to customer 4 request 4 4 4 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:28:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K[01;32m[K%d[m[K[m[K’ expects argument of type ‘[01m[K[01;32m[Kint[m[K[m[K’, but argument 2 has type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+   28 |                     printf("[01;32m[K%[m[K[01;32m[Kd[m[K ", [01;34m[Kn[m[K[01;34m[Ke[m[K[01;34m[Ke[m[K[01;34m[Kd[m[K[01;34m[K[[m[K[01;34m[Kg[m[K[01;34m[K][m[K);
+      |                             [01;32m[K~[m[K[01;32m[K^[m[K    [01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K[01;34m[K~[m[K
+      |                              [01;32m[K|[m[K        [01;34m[K|[m[K
+      |                              [01;32m[Kint[m[K      [01;34m[Kint *[m[K
+      |                             [32m[K%ls[m[K
+[01m[Kfunctions/lerdados.c:35:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   35 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources -1427163712 -1427163680 -1427163648 are not enough to customer 4 request 4 4 4 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 2 2 2 was denied because exceed its maximum allocation
+The customer 2 request 3 3 3 was denied because exceed its maximum allocation
+The customer 1 request 2 2 2 was denied because exceed its maximum allocation
+The customer 4 request 2 2 2 was denied because exceed its maximum allocation
+The customer 0 request 1 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 2 2 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 4 4 was denied because exceed its maximum allocation
+The customer 1 request 1 1 1 was denied because exceed its maximum allocation
+The customer 0 request 2 2 2 was denied because exceed its maximum allocation
+The customer 2 request 1 1 1 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:31:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ undeclared (first use in this function)
+   31 |                     printf("%d ", com->valores[[01;31m[Kj[m[K+1]);
+      |                                                [01;31m[K^[m[K
+[01m[Kfunctions/lerdados.c:31:48:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [makefile:2: banker] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 2 2 2 was denied because exceed its maximum allocation
+The customer 2 request 3 3 3 was denied because exceed its maximum allocation
+The customer 1 request 2 2 2 was denied because exceed its maximum allocation
+The customer 4 request 2 2 2 was denied because exceed its maximum allocation
+The customer 0 request 1 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 2 2 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 4 4 was denied because exceed its maximum allocation
+The customer 1 request 1 1 1 was denied because exceed its maximum allocation
+The customer 0 request 2 2 2 was denied because exceed its maximum allocation
+The customer 2 request 1 1 1 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:38:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kg[m[K’ undeclared (first use in this function)
+   38 |                 printf("%d ",com->valores[[01;31m[Kg[m[K+1]);
+      |                                           [01;31m[K^[m[K
+[01m[Kfunctions/lerdados.c:38:43:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [makefile:2: banker] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because exceed its maximum allocation
+The customer 2 request 3 0 2 was denied because exceed its maximum allocation
+The customer 1 request 2 0 0 was denied because exceed its maximum allocation
+The customer 4 request 0 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The customer 3 request 2 1 1 was denied because exceed its maximum allocation
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because exceed its maximum allocation
+The customer 1 request 1 0 2 was denied because exceed its maximum allocation
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:27:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   27 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:27:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   27 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 8 4 6 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because result in an unsafe state
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:27:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   27 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 8 4 6 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because result in an unsafe state
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:27:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   27 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because result in an unsafe state
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:27:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   27 |         if(com->valores[i+1][01;35m[K>[m[Kneed[i]){
+      |                             [01;35m[K^[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:27:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   27 |         if(com->valores[i+1][01;35m[K>=[m[Kneed[i]){
+      |                             [01;35m[K^~[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KverificarConta[m[K’:
+[01m[Kfunctions/lerdados.c:27:29:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+   27 |         if(com->valores[i+1][01;35m[K>=[m[Kneed[i]){
+      |                             [01;35m[K^~[m[K
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+Allocate to customer 2 the resources 0 1 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28
