@@ -61,6 +61,7 @@ int estadoSeguro(int **need, dados *matriz, int *disponivel){
 
 int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel, dados *matcomp, int modo){
     int id_cliente = com->valores[0];
+    if(modo==1){
     for(int i=0;i<3;i++){
         if(com->valores[i+1]>need[id_cliente][i]){
              printf("The customer %d request ", id_cliente);
@@ -82,14 +83,12 @@ int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel, dado
                 printf("\n");
                  return 0; 
         }
-    }
-   
+    } 
     for(int i=0;i<3;i++){
         disponivel[i]-=com->valores[i+1];
         need[id_cliente][i]-=com->valores[i+1];
     }
-    if(modo){
-        int ehSeguro = estadoSeguro(need,matcomp,disponivel);
+    int ehSeguro = estadoSeguro(need,matcomp,disponivel);
         for(int i=0;i<3;i++){
             disponivel[i]+=com->valores[i+1];
             need[id_cliente][i]+=com->valores[i+1];
@@ -100,6 +99,25 @@ int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel, dado
                 printf("%d ",com->valores[i+1]);
             } 
             printf("was denied because result in an unsafe state\n");
+            return 0;
+        }
+    }else{
+        int quant=0;
+        for(int i=0;i<3;i++){
+            if(com->valores[i+1]<=(matcomp[com->valores[0]].informacoes[i]-need[com->valores[0]][i])){
+                quant++;
+            }
+        }
+        if(quant!=3){
+            for(int i=0;i<3;i++){    
+                printf("The resources "); 
+                for(int g=0;g<3;g++)
+                    printf("%d ", disponivel[g]); 
+                printf("are not enough to customer %d request ", com->valores[0]);
+                for(int g=0;g<3;g++)
+                    printf("%d ", com->valores[g+1]); 
+                printf("\n");
+            }
             return 0;
         }
     }
@@ -143,14 +161,13 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
                         }
                     }
                 }if(strcmp(com->com,"RL")==0){
-                    /*if(verificarConta(com, need,&matriz[com->valores[0]],disponivel,matriz,0)){
-                    }*/
-                   
-                    printf("Release from customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
+                    if(verificarConta(com, need,&matriz[com->valores[0]],disponivel,matriz,0)){
+                        printf("Release from customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
                         for(int j=0;j<3;j++){
                             need[com->valores[0]][j]+=(com->valores[j+1]);
                             disponivel[j]+=(com->valores[j+1]);
                         }
+                    }             
                 }
             }
         }
