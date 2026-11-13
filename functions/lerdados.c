@@ -20,11 +20,29 @@ int lerLinhas(){
     return i;
 }
 
-void estadoSeguro(){
+void estadoSeguro(int **need, dados *matriz, int *disponivel){
+    int workBank[3];
+    int *aux=calloc(sizeof(int),5);
     
+       for(int j=0;j<3;j++)
+            workBank[j]=disponivel[j];
+       do{
+            for(int i=0;i<5;i++){
+                int da=0;
+                if(aux[i])
+                    continue;
+                for(int j=0;j<3;j++){
+                    if(need[i][j]<=workBank[j]){
+                        da=1;
+                    }
+                }
+                if(da){
+                    for(i)
+                }
+            }
+       }while();
 
-
-
+    
 
 }
 
@@ -65,8 +83,6 @@ int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel){
     }
     return 1;    
 }
-
-
 
 void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     FILE *arq;
