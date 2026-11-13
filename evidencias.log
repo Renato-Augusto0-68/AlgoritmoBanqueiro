@@ -3751,4 +3751,1200 @@ The customer 2 request 0 1 0 was denied because exceed its maximum allocation
 [?2004lgcc functions/lerdados.c main.c  -o banker
 ./banker
 Allocate to customer 0 the resources 0 2 1
-The customer 2 request 3 0 2 was denied b
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 8 4 5 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release to customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ clean
+[?2004lmCommand 'clean' not found, did you mean:
+  command 'uclean' from deb svn-buildpackage (0.8.10)
+  command 'lean' from deb elan (4.1.2-3.1ubuntu1)
+  command 'pclean' from deb pbuilder-scripts (22build3)
+  command 'gclean' from deb python3-guidata (3.14.2-2)
+  command 'clear' from deb ncurses-bin (6.6+20251231-1)
+Try: sudo apt install <deb name>
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ m[Kclear
+[?2004l[H[2J[3J[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[5Pclear
+[?2004l[H[2J[3J[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ clearmake clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[5Pclearmake clean[5Pclearn[3@make ru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+Allocate to customer 2 the resources 3 0 2
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+Allocate to customer 2 the resources 3 0 2
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 3 6 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 3 6 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 3 6 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 3 6 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 8 4 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 8 4 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 8 4 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 8 4 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 8 4 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:62:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[KverificarConta[m[K’; have ‘[01m[Kint(comandos *, int **, dados *, int *)[m[K’
+   62 | int [01;31m[KverificarConta[m[K(comandos *com,int **need,dados *matriz, int *disponivel){
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[Kfunctions/lerdados.c:1[m[K:
+[01m[Kfunctions/lerdados.h:9:5:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[KverificarConta[m[K’ with type ‘[01m[Kint(comandos *, int **, dados *, int *, dados *)[m[K’
+    9 | int [01;36m[KverificarConta[m[K(comandos *com, int **need,dados *matriz, int *disponivel, dados *matComp);
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+make: *** [makefile:2: banker] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:62:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[KverificarConta[m[K’; have ‘[01m[Kint(comandos *, int **, dados *, int *)[m[K’
+   62 | int [01;31m[KverificarConta[m[K(comandos *com,int **need,dados *matriz, int *disponivel){
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[Kfunctions/lerdados.c:1[m[K:
+[01m[Kfunctions/lerdados.h:9:5:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[KverificarConta[m[K’ with type ‘[01m[Kint(comandos *, int **, dados *, int *, dados *)[m[K’
+    9 | int [01;36m[KverificarConta[m[K(comandos *com, int **need,dados *matriz, int *disponivel, dados *matComp);
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+make: *** [makefile:2: banker] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 8 4 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 8 4 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The resources 10 -1 4 are not enough to customer 2 request 3 0 2 
+The resources 10 -1 4 are not enough to customer 1 request 2 0 0 
+The resources 10 -1 4 are not enough to customer 4 request 0 0 2 
+The customer 0 request 0 1 1 was denied because exceed its maximum allocation
+The resources 10 -1 4 are not enough to customer 3 request 2 1 1 
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 6 3 | 7 -1 0 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 -1 4 
+The resources 10 -1 4 are not enough to customer 4 request 4 0 0 
+The resources 10 -1 4 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because exceed its maximum allocation
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+Allocate to customer 1 the resources 2 0 0
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+Release from customer 0 the resources 0 1 1
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+Allocate to customer 0 the resources 0 2 0
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+The customer 0 request 0 2 1 was denied because result in an unsafe state
+The customer 2 request 3 0 2 was denied because result in an unsafe state
+The customer 1 request 2 0 0 was denied because result in an unsafe state
+The customer 4 request 0 0 2 was denied because result in an unsafe state
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+The customer 3 request 2 1 1 was denied because result in an unsafe state
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 0 0 | 7 5 3 
+3 2 2 | 0 0 0 | 3 2 2 
+9 0 2 | 0 0 0 | 9 0 2 
+2 2 2 | 0 0 0 | 2 2 2 
+4 3 3 | 0 0 0 | 4 3 3 
+AVAILABLE 10 5 7 
+The customer 4 request 4 0 0 was denied because result in an unsafe state
+The customer 1 request 1 0 2 was denied because result in an unsafe state
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+The customer 0 request 0 1 1 was denied because result in an unsafe state
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 2 1 | 7 3 2 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 2 1 
+The resources 3 2 1 are not enough to customer 4 request 4 0 0 
+The resources 3 2 1 are not enough to customer 1 request 1 0 2 
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+The customer 3 request 4 0 0 was denied because exceed its maximum allocation
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+Release from customer 3 the resources 4 0 0
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+Release from customer 3 the resources 4 0 0
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 3 0 2 | 0 2 0 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | -2 1 1 | 4 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 6 3 0 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[Kmake run
+[?2004l./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+Release from customer 3 the resources 2 0 0
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 3 0 2 | 0 2 0 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 0 1 1 | 2 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 4 3 0 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+Release from customer 3 the resources 2 0 0
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 3 0 2 | 0 2 0 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 0 1 1 | 2 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 4 3 0 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+Allocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 2 0 0 | 1 2 2 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 2 1 1 | 0 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 2 
+The resources 3 3 2 are not enough to customer 4 request 4 0 0 
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+Release from customer 3 the resources 1 0 0
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3 
+3 2 2 | 3 0 2 | 0 2 0 
+9 0 2 | 3 0 2 | 6 0 0 
+2 2 2 | 1 1 1 | 1 1 1 
+4 3 3 | 0 0 2 | 4 3 1 
+AVAILABLE 3 3 0 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker
+Al

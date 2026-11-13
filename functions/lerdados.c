@@ -21,13 +21,14 @@ int lerLinhas(){
 }
 
 int estadoSeguro(int **need, dados *matriz, int *disponivel){
-    int workBank[3];
+    int *workBank=calloc(sizeof(int),3);
     int *aux=calloc(sizeof(int),5);
     int continua;
     int cont=0;
        for(int j=0;j<3;j++)
             workBank[j]=disponivel[j];
-       do{
+       do{  
+            continua=0;
             for(int i=0;i<5;i++){
                 int da=0;
                 if(aux[i])
@@ -35,6 +36,10 @@ int estadoSeguro(int **need, dados *matriz, int *disponivel){
                 for(int j=0;j<3;j++){
                     if(need[i][j]<=workBank[j]){
                         da=1;
+                    }
+                    else{
+                        da=0;
+                        break;
                     }
                 }
                 if(da){
@@ -47,13 +52,14 @@ int estadoSeguro(int **need, dados *matriz, int *disponivel){
                 }
             }
         }while(continua);
-
-        if(cont==3)
+        free(aux);
+        free(workBank);
+        if(cont==5)
            return 1;
         return 0;
 }
 
-int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel){
+int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel, dados *matcomp, int modo){
     int id_cliente = com->valores[0];
     for(int i=0;i<3;i++){
         if(com->valores[i+1]>need[id_cliente][i]){
@@ -77,9 +83,18 @@ int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel){
                  return 0; 
         }
     }
-
+   
     for(int i=0;i<3;i++){
-        if(!(com->valores[i+1]-need[id_cliente][i]==0)&& (com->valores[i+1]-disponivel[i]==0)){
+        disponivel[i]-=com->valores[i+1];
+        need[id_cliente][i]-=com->valores[i+1];
+    }
+    if(modo){
+        int ehSeguro = estadoSeguro(need,matcomp,disponivel);
+        for(int i=0;i<3;i++){
+            disponivel[i]+=com->valores[i+1];
+            need[id_cliente][i]+=com->valores[i+1];
+        }
+        if(!ehSeguro){
             printf("The customer %d request ",id_cliente);
             for(int i=0;i<3;i++){
                 printf("%d ",com->valores[i+1]);
@@ -120,7 +135,7 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
             }else{
                 fscanf(arq,"%d %d %d %d",&com->valores[0],&com->valores[1],&com->valores[2], &com->valores[3]);
                 if(strcmp(com->com,"RQ")==0){
-                    if(verificarConta(com,need,&matriz[com->valores[0]], disponivel)){
+                    if(verificarConta(com,need,&matriz[com->valores[0]], disponivel,matriz,1)){
                         printf("Allocate to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
                         for(int j=0;j<3;j++){
                             need[com->valores[0]][j]-=(com->valores[j+1]);
@@ -128,13 +143,14 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
                         }
                     }
                 }if(strcmp(com->com,"RL")==0){
-                    if(verificarConta(com, need,&matriz[com->valores[0]],disponivel)){
-                        printf("Release from customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
+                    /*if(verificarConta(com, need,&matriz[com->valores[0]],disponivel,matriz,0)){
+                    }*/
+                   
+                    printf("Release from customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
                         for(int j=0;j<3;j++){
                             need[com->valores[0]][j]+=(com->valores[j+1]);
                             disponivel[j]+=(com->valores[j+1]);
                         }
-                    }
                 }
             }
         }
