@@ -20,7 +20,7 @@ int lerLinhas(){
     return i;
 }
 
-int estadoSeguro(int **need, dados *matriz, int *disponivel){
+int estadoSeguro(int **need, dados *matriz, int *disponivel, FILE *x){
     int *workBank=calloc(sizeof(int),3);
     int *aux=calloc(sizeof(int),5);
     int continua;
@@ -59,28 +59,28 @@ int estadoSeguro(int **need, dados *matriz, int *disponivel){
         return 0;
 }
 
-int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel, dados *matcomp, int modo){
+int verificarConta(comandos *com,int **need,FILE *x, int *disponivel, dados *matcomp, int modo){
     int id_cliente = com->valores[0];
     if(modo==1){
     for(int i=0;i<3;i++){
         if(com->valores[i+1]>need[id_cliente][i]){
-             printf("The customer %d request ", id_cliente);
+            fprintf(arq,"The customer %d request ", id_cliente);
               for(int j=0;j<3;j++){
-                printf("%d ",com->valores[j+1]);
+            fprintf("%d ",com->valores[j+1]);
               }
-              printf("was denied because exceed its maximum allocation\n");
+            fprintf("was denied because exceed its maximum allocation\n");
               return 0;   
         }
     }
     for(int i=0;i<3;i++){
         if(com->valores[i+1]>disponivel[i]){
-            printf("The resources "); 
+        fprintf("The resources "); 
                 for(int g=0;g<3;g++)
-                    printf("%d ", disponivel[g]); 
-                printf("are not enough to customer %d request ", id_cliente);
+                fprintf("%d ", disponivel[g]); 
+            fprintf("are not enough to customer %d request ", id_cliente);
                 for(int g=0;g<3;g++)
-                    printf("%d ", com->valores[g+1]); 
-                printf("\n");
+                fprintf("%d ", com->valores[g+1]); 
+            fprintf("\n");
                  return 0; 
         }
     } 
@@ -94,11 +94,11 @@ int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel, dado
             need[id_cliente][i]+=com->valores[i+1];
         }
         if(!ehSeguro){
-            printf("The customer %d request ",id_cliente);
+        fprintf("The customer %d request ",id_cliente);
             for(int i=0;i<3;i++){
-                printf("%d ",com->valores[i+1]);
+            fprintf("%d ",com->valores[i+1]);
             } 
-            printf("was denied because result in an unsafe state\n");
+        fprintf("was denied because result in an unsafe state\n");
             return 0;
         }
     }else{
@@ -110,13 +110,13 @@ int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel, dado
         }
         if(quant!=3){
             for(int i=0;i<3;i++){    
-                printf("The resources "); 
+            fprintf(arq2,"The resources "); 
                 for(int g=0;g<3;g++)
-                    printf("%d ", disponivel[g]); 
-                printf("are not enough to customer %d request ", com->valores[0]);
+                fprintf("%d ", disponivel[g]); 
+            fprintf("are not enough to customer %d request ", com->valores[0]);
                 for(int g=0;g<3;g++)
-                    printf("%d ", com->valores[g+1]); 
-                printf("\n");
+                fprintf("%d ", com->valores[g+1]); 
+            fprintf("\n");
             }
             return 0;
         }
@@ -127,34 +127,43 @@ int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel, dado
 void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     FILE *arq;
     arq=fopen("commands.txt","r");
+    
+    FILE *arq2;
+    arq2=fopen("results2.txt","w");
+    if(arq2==NULL){
+        fprintf(stderr,"Não foi possível criar o arquivo");
+        exit(1);
+    }
+
     if(arq!=NULL){
         while(fscanf(arq,"%s",com->com)!=EOF){
             if(strcmp(com->com, "*")==0){
-                printf("MAXIMUM | ALLOCATION | NEED\n");
+                
+                fprintf(arq2,"MAXIMUM | ALLOCATION | NEED\n");
                 for(int i=0;i<5;i++){
                     for(int g=0;g<3;g++){
-                        printf("%d ", matriz[i].informacoes[g]);
+                        fprintf(arq2,"%d ", matriz[i].informacoes[g]);
                     }
-                    printf("| ");
+                    fprintf(arq2,"| ");
                     for(int g=0;g<3;g++){
-                        printf("%d ", matriz[i].informacoes[g]-need[i][g]);
+                        fprintf(arq2,"%d ", matriz[i].informacoes[g]-need[i][g]);
                     } 
-                    printf("| ");
+                    fprintf(arq2,"| ");
                     for(int g=0;g<3;g++){
-                        printf("%d ", need[i][g]);
+                        fprintf(arq2,"%d ", need[i][g]);
                     } 
-                    printf("\n");
+                    fprintf(arq2,"\n");
                 }
-                printf("AVAILABLE ");
+            fprintf(arq2,"AVAILABLE ");
                 for(int i=0;i<3;i++){
-                    printf("%d ",disponivel[i]);
+                fprintf(arq2,"%d ",disponivel[i]);
                 }
-                printf("\n");
+            fprintf(arq2,"\n");
             }else{
                 fscanf(arq,"%d %d %d %d",&com->valores[0],&com->valores[1],&com->valores[2], &com->valores[3]);
                 if(strcmp(com->com,"RQ")==0){
                     if(verificarConta(com,need,&matriz[com->valores[0]], disponivel,matriz,1)){
-                        printf("Allocate to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
+                    fprintf(arq2,"Allocate to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
                         for(int j=0;j<3;j++){
                             need[com->valores[0]][j]-=(com->valores[j+1]);
                             disponivel[j]-=com->valores[j+1];      
@@ -162,7 +171,7 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
                     }
                 }if(strcmp(com->com,"RL")==0){
                     if(verificarConta(com, need,&matriz[com->valores[0]],disponivel,matriz,0)){
-                        printf("Release from customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
+                    fprintf(arq2,"Release from customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
                         for(int j=0;j<3;j++){
                             need[com->valores[0]][j]+=(com->valores[j+1]);
                             disponivel[j]+=(com->valores[j+1]);
@@ -171,6 +180,10 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
                 }
             }
         }
+    }
+    if(arq==NULL){
+        fprintf(stderr,"Não foi possível abrir o arquivo");
+        exit(1);
     }
     fclose(arq);
 }
@@ -183,7 +196,12 @@ void buscarDados(dados *matriz, int limit){
         for(int i=0; fscanf(arq,"%d,%d,%d",&matriz[i].informacoes[0],&matriz[i].informacoes[1],&matriz[i].informacoes[2])!=EOF && i<limit;i++){   
         }
     }// tá tem
+    if(arq==NULL){
+        fprintf(stderr,"Não foi possível abrir o arquivo customer.txt");
+        exit(1);
+    }
     fclose(arq);    
+
 }
 
 
