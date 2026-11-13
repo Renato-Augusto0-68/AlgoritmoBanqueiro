@@ -134,37 +134,42 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
         fprintf(stderr,"Não foi possível criar o arquivo");
         exit(1);
     }
-
+    char linha[516];
     if(arq!=NULL){
         while(fscanf(arq,"%s",com->com)!=EOF){
             if(strcmp(com->com, "*")==0){
-                
                 fprintf(arq2,"MAXIMUM  |   ALLOCATION  |   NEED\n");
-                for(int i=0;i<5;i++){
-                    for(int g=0;g<3;g++){
+                for(int i=0;i<(matriz->tamanho+2);i++){
+                    for(int g=0;g<matriz->tamanho;g++){
                         fprintf(arq2,"%d ", matriz[i].informacoes[g]);
                     }
                     fprintf(arq2,"   |   ");
-                    for(int g=0;g<3;g++){
+                    for(int g=0;g<matriz->tamanho;g++){
                         fprintf(arq2,"%d ", matriz[i].informacoes[g]-need[i][g]);
                     } 
                     fprintf(arq2,"      |   ");
-                    for(int g=0;g<3;g++){
+                    for(int g=0;g<matriz->tamanho;g++){
                         fprintf(arq2,"%d ", need[i][g]);
                     } 
                     fprintf(arq2,"\n");
                 }
             fprintf(arq2,"AVAILABLE ");
-                for(int i=0;i<3;i++){
+                for(int i=0;i<matriz->tamanho;i++){
                 fprintf(arq2,"%d ",disponivel[i]);
                 }
             fprintf(arq2,"\n");
             }else{
+
+
+
                 fscanf(arq,"%d %d %d %d",&com->valores[0],&com->valores[1],&com->valores[2], &com->valores[3]);
+                
+                
+                
                 if(strcmp(com->com,"RQ")==0){
                     if(verificarConta(com,need,arq2, disponivel,matriz,1)){
                     fprintf(arq2,"Allocate to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
-                        for(int j=0;j<3;j++){
+                        for(int j=0;j<matriz->tamanho;j++){
                             need[com->valores[0]][j]-=(com->valores[j+1]);
                             disponivel[j]-=com->valores[j+1];      
                         }
@@ -172,7 +177,7 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
                 }if(strcmp(com->com,"RL")==0){
                     if(verificarConta(com, need,arq2,disponivel,matriz,0)){
                     fprintf(arq2,"Release from customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);
-                        for(int j=0;j<3;j++){
+                        for(int j=0;j<matriz->tamanho;j++){
                             need[com->valores[0]][j]+=(com->valores[j+1]);
                             disponivel[j]+=(com->valores[j+1]);
                         }
@@ -186,6 +191,7 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
         exit(1);
     }
     fclose(arq);
+    fclose(arq2);
 }
 
 

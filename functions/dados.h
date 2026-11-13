@@ -6,6 +6,7 @@
 
 typedef struct dados{
    int *informacoes;
+   int tamanho;
 }dados;
 
 #endif
