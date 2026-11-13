@@ -5,7 +5,7 @@
 #include "comandos.h"
 
 int lerLinhas();
-void estadoSeguro(int **need, dados *matriz, int *disponivel);
+int estadoSeguro(int **need, dados *matriz, int *disponivel);
 int verificarConta(comandos *com, int **need,dados *matriz, int *disponivel);
 void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel);
 void buscarDados(dados *x, int limit);

@@ -20,10 +20,11 @@ int lerLinhas(){
     return i;
 }
 
-void estadoSeguro(int **need, dados *matriz, int *disponivel){
+int estadoSeguro(int **need, dados *matriz, int *disponivel){
     int workBank[3];
     int *aux=calloc(sizeof(int),5);
-    
+    int continua;
+    int cont=0;
        for(int j=0;j<3;j++)
             workBank[j]=disponivel[j];
        do{
@@ -37,13 +38,19 @@ void estadoSeguro(int **need, dados *matriz, int *disponivel){
                     }
                 }
                 if(da){
-                    for(i)
+                    for(int j=0;j<3;j++){
+                        workBank[j]+=matriz[i].informacoes[j]-need[i][j];
+                    }
+                    aux[i]=1;
+                    cont++;
+                    continua=1;
                 }
             }
-       }while();
+        }while(continua);
 
-    
-
+        if(cont==3)
+           return 1;
+        return 0;
 }
 
 int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel){
