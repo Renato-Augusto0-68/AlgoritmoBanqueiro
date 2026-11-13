@@ -5,6 +5,6 @@ run: banker
 	./banker
 
 clean:
-	rm -f banker
+	rm -f banker result.txt
 
 .PHONY: run clean
