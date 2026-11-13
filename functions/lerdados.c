@@ -20,6 +20,14 @@ int lerLinhas(){
     return i;
 }
 
+void estadoSeguro(){
+    
+
+
+
+
+}
+
 int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel){
     int id_cliente = com->valores[0];
     for(int i=0;i<3;i++){
@@ -44,6 +52,7 @@ int verificarConta(comandos *com,int **need,dados *matriz, int *disponivel){
                  return 0; 
         }
     }
+
     for(int i=0;i<3;i++){
         if(!(com->valores[i+1]-need[id_cliente][i]==0)&& (com->valores[i+1]-disponivel[i]==0)){
             printf("The customer %d request ",id_cliente);
