@@ -32,15 +32,16 @@ int lerComandos(){
 }
 
 int estadoSeguro(int **need, dados *matriz, int *disponivel){
+    int comand = lerLinhas();
     int *workBank=calloc(sizeof(int),(matriz->tamanho));
-    int *aux=calloc(sizeof(int),((matriz->tamanho)+2));
+    int *aux=calloc(sizeof(int),(comand));
     int continua;
     int cont=0;
        for(int j=0;j<(matriz->tamanho);j++)
             workBank[j]=disponivel[j];
        do{  
             continua=0;
-            for(int i=0;i<((matriz->tamanho)+2);i++){
+            for(int i=0;i<(comand);i++){
                 int da=0;
                 if(aux[i])
                     continue;
@@ -65,7 +66,7 @@ int estadoSeguro(int **need, dados *matriz, int *disponivel){
         }while(continua);
         free(aux);
         free(workBank);
-        if(cont==((matriz->tamanho)+2))
+        if(cont==(comand))
            return 1;
         return 0;
 }
@@ -145,12 +146,12 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
         fprintf(stderr,"Não foi possível criar o arquivo");
         exit(1);
     }
-    char linha[516];
+    int comand = lerLinhas();
     if(arq!=NULL){
         while(fscanf(arq,"%s",com->com)!=EOF){
             if(strcmp(com->com, "*")==0){
                 fprintf(arq2,"MAXIMUM  |   ALLOCATION  |   NEED\n");
-                for(int i=0;i<(matriz->tamanho+2);i++){
+                for(int i=0;i<comand;i++){
                     for(int g=0;g<matriz->tamanho;g++){
                         fprintf(arq2,"%d ", matriz[i].informacoes[g]);
                     }
