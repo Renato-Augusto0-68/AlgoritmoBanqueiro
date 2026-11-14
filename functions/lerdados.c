@@ -30,6 +30,12 @@ int estadoSeguro(int **need, dados *matriz, int *disponivel){
     int comand = lerLinhas();
     int *workBank=calloc(sizeof(int),(matriz->tamanho));
     int *aux=calloc(sizeof(int),(comand));
+    if(workBank==NULL|| aux==NULL){
+        fprintf(stderr,"Falha de alocação do vetor auxiliar");
+        free(aux);
+        free(workBank);
+        exit(1);
+    }
     int continua;
     int cont=0;
        for(int j=0;j<(matriz->tamanho);j++)
