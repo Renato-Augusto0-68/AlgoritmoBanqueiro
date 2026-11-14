@@ -5614,4 +5614,47 @@ make: *** [makefile:2: banker] Error 1
 [?2004lrm -f banker result.txt
 [?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
 [?2004lrm -f banker result.txt
-[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@Pcd
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdScript started on 2026-11-14 07:30:48-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="177" LINES="13"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker 10 5 7
+make: *** [makefile:5: run] Segmentation fault
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker 10 5 7
+5[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker 10 5 7
+5[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker result.txt
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C[2@clea[C
+[?2004lrm -f banker result.txt
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+quantidade de arguentos inferior ao necessáriomake: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker 10 5 7
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker result.txt
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [7mif(maximos[i].informacoes==NULL){[27m
+[7m            fprintf(stderr,"Alocação de maximos[i].informacoes falhou");[27m
+[7m            exit(1);[27m
+[7m        }[27m[A[A[A]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[K
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KbuscarDados[m[K’:
+[01m[Kfunctions/lerdados.c:240:21:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kfpritnf[m[K’; did you mean ‘[01m[Kfprintf[m[K’? [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  240 |                     [01;31m[Kfpritnf[m[K(stderr,"Formatação inadequada no arquivo customer.txt");
+      |                     [01;31m[K^~~~~~~[m[K
+      |                     [32m[Kfprintf[m[K
+make: *** [makefile:2: banker] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+quantidade de arguentos inferior ao necessáriomake: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[K[K[K[K[K[K[K[Kake [K[K[K[Kmake clean
+[?2004lrm -f banker result.txt
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/Al

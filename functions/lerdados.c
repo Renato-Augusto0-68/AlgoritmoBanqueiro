@@ -237,7 +237,7 @@ void buscarDados(dados *matriz, int limit){
             for(int g=0;g<(matriz->tamanho);g++){
                 int val=fscanf(arq, "%d",&matriz[i].informacoes[g]);
                 if(val!=1){
-                    fpritnf(stderr,"Formatação inadequada no arquivo customer.txt");
+                    fprintf(stderr,"Formatação inadequada no arquivo customer.txt");
                     fclose(arq);
                     exit(1);
                 }
