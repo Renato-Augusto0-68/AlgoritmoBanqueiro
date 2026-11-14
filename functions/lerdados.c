@@ -16,20 +16,15 @@ int lerLinhas(){
                 i++;
         }
     }
+    if(arq==NULL){
+        fprintf(arq,"Não foi possível abrir o arquivo");
+        fclose(arq);
+        exit(1);
+    }
     fclose(arq);
     return i;
 }
 
-int lerComandos(){
-    FILE *arq;
-    arq=fopen("commands.txt","r");
-    if (arq==NULL){
-        fprintf(stderr,"Não foi possível abrir o arquivo");
-        exit(1);
-    }
-    
-
-}
 
 int estadoSeguro(int **need, dados *matriz, int *disponivel){
     int comand = lerLinhas();
@@ -144,14 +139,18 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     
     FILE *arq2;
     arq2=fopen("result.txt","w");
-    if(arq2==NULL){
+    if(arq2==NULL){ 
         fprintf(stderr,"Não foi possível criar/abrir o arquivo");
+        fclose(arq);
+        fclose(arq2);
         exit(1);
     }
     int comand = lerLinhas();
     if(arq!=NULL){
         while(fscanf(arq,"%s",com->com)!=EOF){
             if(strcmp(com->com, "*")==0){
+                
+                
                 fprintf(arq2,"MAXIMUM  |   ALLOCATION  |   NEED\n");
                 for(int i=0;i<comand;i++){
                     for(int g=0;g<matriz->tamanho;g++){
@@ -173,13 +172,28 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
                 }
             fprintf(arq2,"\n");
             }else{
-                fscanf(arq,"%d ",&com->valores[0]);
-                if(com->valores[0]<0 || com->valores[0]>=comand){
-                    fprintf(stderr,"Id %d inválido por ser maior ou menor que o total de clientes",com->valores[0]);
+                int ret=fscanf(arq,"%d ",&com->valores[0]);
+                if(ret!=1){
+                    fprintf(stderr,"Falha crítica, Id ausente");
+                    fclose(arq);
+                    fclose(arq2);
                     exit(1);
                 }
-                for(int i=0;i<matriz->tamanho;i++)
-                    fscanf(arq,"%d ",&com->valores[i+1]);
+                if(com->valores[0]<0 || com->valores[0]>=comand){
+                    fprintf(stderr,"Id %d inválido por ser maior ou menor que o total de clientes",com->valores[0]);
+                    fclose(arq);
+                    fclose(arq2);
+                    exit(1);
+                }
+                for(int i=0;i<matriz->tamanho;i++){
+                    int ret2=fscanf(arq,"%d ",&com->valores[i+1]);
+                    if(ret2!=1){
+                        fprintf(stderr,"Falha crítica, comando ausente");
+                        fclose(arq);
+                        fclose(arq2);
+                        exit(1);
+                    }
+                }
                 if(strcmp(com->com,"RQ")==0){
                     if(verificarConta(com,need,arq2, disponivel,matriz,1)){
                     fprintf(arq2,"Allocate to customer %d the resources ",com->valores[0]);
@@ -208,6 +222,8 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     }
     if(arq==NULL){
         fprintf(stderr,"Não foi possível abrir o arquivo");
+        fclose(arq);
+        fclose(arq2);
         exit(1);
     }
     fclose(arq);
@@ -221,16 +237,27 @@ void buscarDados(dados *matriz, int limit){
     if(arq!=NULL){
         for(int i=0;i<(limit);i++){
             for(int g=0;g<(matriz->tamanho);g++){
-                fscanf(arq, "%d",&matriz[i].informacoes[g]);
+                int val=fscanf(arq, "%d",&matriz[i].informacoes[g]);
+                if(val!=1){
+                    fscanf(stderr,"Formatação inadequada no arquivo customer.txt");
+                    fclose(arq);
+                    exit(1);
+                }
                 if(g < matriz->tamanho - 1) {
                 char virgula;
-                fscanf(arq, " %c", &virgula); 
+                int val2=fscanf(arq, " %c", &virgula);
+                if(val2!=1){
+                    fscanf(stderr,"Falha por falta de virgula em customer.txt");
+                    fclose(arq);
+                    exit(1);
+                } 
             }
             }
         }
     }// tá tem
     if(arq==NULL){
         fprintf(stderr,"Não foi possível abrir o arquivo customer.txt");
+        fclose(arq);
         exit(1);
     }
     fclose(arq);    
