@@ -7,8 +7,9 @@
 int main(int argc, char *argv[]){
     
     int valor = lerLinhas();
+
     if((argc+1)<valor || argc<2){
-        fprintf(stderr,"quantidade de arguentos inferior ao necessário");
+        fprintf(stderr,"quantidade de argumentos inferior ao necessário");
         exit(1);
     }
     dados maximos[valor];
@@ -31,7 +32,7 @@ int main(int argc, char *argv[]){
         for(int i=0;i<valor;i++){
             need[i]=malloc(sizeof(int)*(argc-1));
             if(need[i]==NULL){
-                fprintf(stderr,"Alocação de need[i]. falhou");
+                fprintf(stderr,"Alocação de need[i] falhou");
                 exit(1);
             }
         }

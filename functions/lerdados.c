@@ -15,9 +15,10 @@ int lerLinhas(){
             if(ch=='\n')
                 i++;
         }
+        i++;
     }
     if(arq==NULL){
-        fprintf(arq,"Não foi possível abrir o arquivo");
+        fprintf(stderr,"Não foi possível abrir o arquivo");
         fclose(arq);
         exit(1);
     }
@@ -142,7 +143,6 @@ int verificarConta(comandos *com,int **need,FILE *x, int *disponivel, dados *mat
 void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     FILE *arq;
     arq=fopen("commands.txt","r");
-    
     FILE *arq2;
     arq2=fopen("result.txt","w");
     if(arq2==NULL){ 
