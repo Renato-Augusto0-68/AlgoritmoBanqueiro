@@ -20,6 +20,17 @@ int lerLinhas(){
     return i;
 }
 
+int lerComandos(){
+    FILE *arq;
+    arq=fopen("commands.txt","r");
+    if (arq==NULL){
+        fprintf(stderr,"Não foi possível abrir o arquivo");
+        exit(1);
+    }
+    
+
+}
+
 int estadoSeguro(int **need, dados *matriz, int *disponivel){
     int *workBank=calloc(sizeof(int),3);
     int *aux=calloc(sizeof(int),5);
@@ -159,13 +170,8 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
                 }
             fprintf(arq2,"\n");
             }else{
-
-
-
-                fscanf(arq,"%d %d %d %d",&com->valores[0],&com->valores[1],&com->valores[2], &com->valores[3]);
-                
-                
-                
+                for(int i=0;i<=matriz->tamanho;i++)
+                    fscanf(arq,"%d",&com->valores[i]);
                 if(strcmp(com->com,"RQ")==0){
                     if(verificarConta(com,need,arq2, disponivel,matriz,1)){
                     fprintf(arq2,"Allocate to customer %d the resources %d %d %d\n",com->valores[0],com->valores[1],com->valores[2],com->valores[3]);

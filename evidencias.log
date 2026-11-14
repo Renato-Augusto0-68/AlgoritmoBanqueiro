@@ -5365,4 +5365,52 @@ MAXIMUM | ALLOCATION | NEED
 [?2004lrm -f banker results2.txt
 [?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
 [?2004lgcc functions/lerdados.c main.c  -o banker
-./
+./banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker result.txt
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ 
+Script done on 2026-11-13 18:25:17-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-13 20:35:00-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="177" LINES="20"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ script -a evidencias.log[14Pmake clean[2Pru[C[2@clea[C[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+quantidade de arguentos inferior ao necessáriomake: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make runscript -a evidencias.log[16Pmake run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+1[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ ah porra l[Kkkkkkkkkkkk
+[?2004lah: command not found
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ ./[K[Kmake run 10 5 7
+[?2004l./banker
+1make: *** No rule to make target '10'.  Stop.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run 10 5 7
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker
+1make: *** No rule to make target '10'.  Stop.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run 10 5 7[K[K[K[K[K[K[K
+[?2004l./banker 10 5 7
+4[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker 10 5 7
+quantidade de arguentos inferior ao necessáriomake: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004l./banker 10 5 7
+quantidade de arguentos inferior ao necessáriomake: *** [makefile:5: run] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker result.txt
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker 10 5 7
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run[2@clea[C
+[?2004lrm -f banker result.txt
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean[2Pru[C
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker 10 5 7
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make run
+[?2004lgcc functions/lerdados.c main.c  -o banker
+./banker 10 5 7
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -

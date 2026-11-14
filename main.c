@@ -4,11 +4,10 @@
 #include "functions/lerdados.h"
 
 
-
 int main(int argc, char *argv[]){
     
     int valor = lerLinhas();
-    if((argc+2)!=valor){
+    if((argc+1)<valor || argc<2){
         fprintf(stderr,"quantidade de arguentos inferior ao necessário");
         exit(1);
     }
