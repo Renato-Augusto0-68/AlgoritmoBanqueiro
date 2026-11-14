@@ -149,8 +149,6 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     if(arq!=NULL){
         while(fscanf(arq,"%s",com->com)!=EOF){
             if(strcmp(com->com, "*")==0){
-                
-                
                 fprintf(arq2,"MAXIMUM  |   ALLOCATION  |   NEED\n");
                 for(int i=0;i<comand;i++){
                     for(int g=0;g<matriz->tamanho;g++){
@@ -239,7 +237,7 @@ void buscarDados(dados *matriz, int limit){
             for(int g=0;g<(matriz->tamanho);g++){
                 int val=fscanf(arq, "%d",&matriz[i].informacoes[g]);
                 if(val!=1){
-                    fscanf(stderr,"Formatação inadequada no arquivo customer.txt");
+                    fpritnf(stderr,"Formatação inadequada no arquivo customer.txt");
                     fclose(arq);
                     exit(1);
                 }
@@ -247,7 +245,7 @@ void buscarDados(dados *matriz, int limit){
                 char virgula;
                 int val2=fscanf(arq, " %c", &virgula);
                 if(val2!=1){
-                    fscanf(stderr,"Falha por falta de virgula em customer.txt");
+                    fprintf(stderr,"Falha por falta de virgula em customer.txt");
                     fclose(arq);
                     exit(1);
                 } 
