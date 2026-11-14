@@ -73,8 +73,10 @@ int estadoSeguro(int **need, dados *matriz, int *disponivel){
 
 int verificarConta(comandos *com,int **need,FILE *x, int *disponivel, dados *matcomp, int modo){
     int id_cliente = com->valores[0];
+    int total_cliente = lerLinhas();
     if(modo==1){
     for(int i=0;i<matcomp->tamanho;i++){
+        
         if(com->valores[i+1]>need[id_cliente][i]){
             fprintf(x,"The customer %d request ", id_cliente);
               for(int j=0;j<matcomp->tamanho;j++){
@@ -143,7 +145,7 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     FILE *arq2;
     arq2=fopen("result.txt","w");
     if(arq2==NULL){
-        fprintf(stderr,"Não foi possível criar o arquivo");
+        fprintf(stderr,"Não foi possível criar/abrir o arquivo");
         exit(1);
     }
     int comand = lerLinhas();
@@ -172,6 +174,10 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
             fprintf(arq2,"\n");
             }else{
                 fscanf(arq,"%d ",&com->valores[0]);
+                if(com->valores[0]<0 || com->valores[0]>=comand){
+                    fprintf(stderr,"Id %d inválido por ser maior ou menor que o total de clientes",com->valores[0]);
+                    exit(1);
+                }
                 for(int i=0;i<matriz->tamanho;i++)
                     fscanf(arq,"%d ",&com->valores[i+1]);
                 if(strcmp(com->com,"RQ")==0){
