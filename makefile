@@ -2,7 +2,7 @@ banker: main.c functions/lerdados.c functions/lerdados.h functions/dados.h funct
 	gcc functions/lerdados.c main.c  -o banker
 
 run: banker
-	./banker 10 5 7
+	./banker
 
 clean:
 	rm -f banker result.txt
