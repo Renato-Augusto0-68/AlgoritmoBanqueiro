@@ -5757,4 +5757,8 @@ quantidade de argumentos inferior ao necessário[?2004h]0;devcontainers@PcdeRe
 [?2004lrm -f banker result.txt
 [?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean&& ./banker 10 5 7
 [?2004lgcc functions/lerdados.c main.c  -o banker
-[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mde
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdeScript started on 2026-11-15 11:41:50-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="177" LINES="13"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [?2004l
+exit
+
+Script done on 2026-11-15 13:23:16-03:00 [COMMAND_EXIT_CODE="0"]
