@@ -31,9 +31,13 @@ int estadoSeguro(int **need, dados *matriz, int *disponivel){
     int comand = lerLinhas();
     int *workBank=calloc(sizeof(int),(matriz->tamanho));
     int *aux=calloc(sizeof(int),(comand));
-    if(workBank==NULL|| aux==NULL){
-        fprintf(stderr,"Falha de alocação do vetor auxiliar");
+    if(workBank==NULL){
+        fprintf(stderr,"Falha de alocação do vetor de armazenamento dos dados");
         free(aux);
+        exit(1);
+    }
+    if(aux==NULL){
+        fprintf(stderr,"Falha de alocação do vetor auxiliar");
         free(workBank);
         exit(1);
     }
@@ -148,7 +152,6 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     if(arq2==NULL){ 
         fprintf(stderr,"Não foi possível criar/abrir o arquivo");
         fclose(arq);
-        fclose(arq2);
         exit(1);
     }
     int comand = lerLinhas();
@@ -226,7 +229,6 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
     }
     if(arq==NULL){
         fprintf(stderr,"Não foi possível abrir o arquivo");
-        fclose(arq);
         fclose(arq2);
         exit(1);
     }
@@ -261,11 +263,9 @@ void buscarDados(dados *matriz, int limit){
     }// tá tem
     if(arq==NULL){
         fprintf(stderr,"Não foi possível abrir o arquivo customer.txt");
-        fclose(arq);
         exit(1);
     }
     fclose(arq);    
-
 }
 
 
