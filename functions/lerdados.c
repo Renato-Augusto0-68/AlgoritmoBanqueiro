@@ -93,7 +93,7 @@ int verificarConta(comandos *com,int **need,FILE *x, int *disponivel, dados *mat
         }
     }
     for(int i=0;i<matcomp->tamanho;i++){
-        if(com->valores[i+1]>disponivel[i]){
+        if(com->valores[i+1]>disponivel[i] || com->valores[i+1]<0){
         fprintf(x,"The resources "); 
                 for(int g=0;g<matcomp->tamanho;g++)
                 fprintf(x,"%d ", disponivel[g]); 
@@ -192,6 +192,7 @@ void coletarComandos(comandos *com, dados *matriz, int **need, int *disponivel){
                     fclose(arq2);
                     exit(1);
                 }
+                
                 for(int i=0;i<matriz->tamanho;i++){
                     int ret2=fscanf(arq,"%d ",&com->valores[i+1]);
                     if(ret2!=1){
