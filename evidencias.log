@@ -5762,3 +5762,35 @@ quantidade de argumentos inferior ao necessário[?2004h]0;devcontainers@PcdeRe
 exit
 
 Script done on 2026-11-15 13:23:16-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-16 14:25:30-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="177" LINES="16"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ script -a evidencias.log[Kscript -a evidencias.log[14Pmake clean&& ./banker 10 5 7clean[K&& ./banker 10 5 7
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make && ./banker 10 5 7
+[?2004lmake: 'banker' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make && ./banker 10 5 7
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[01m[Kfunctions/lerdados.c:[m[K In function ‘[01m[KcoletarComandos[m[K’:
+[01m[Kfunctions/lerdados.c:195:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  195 |                 if(com->valores[[01;31m[Ki[m[K]<0)
+      |                                 [01;31m[K^[m[K
+[01m[Kfunctions/lerdados.c:195:33:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [makefile:2: banker] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make && ./banker 10 5 7
+[?2004lgcc functions/lerdados.c main.c  -o banker
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make && ./banker 10 5 7[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kclean
+[?2004lCommand 'clean' not found, did you mean:
+  command 'gclean' from deb python3-guidata (3.14.2-2)
+  command 'lean' from deb elan (4.1.2-3.1ubuntu1)
+  command 'pclean' from deb pbuilder-scripts (22build3)
+  command 'uclean' from deb svn-buildpackage (0.8.10)
+  command 'clear' from deb ncurses-bin (6.6+20251231-1)
+Try: sudo apt install <deb name>
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ clearnmake && ./banker 10 5 7
+[?2004lmake: 'banker' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ make clean
+[?2004lrm -f banker result.txt 
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/AlgoritmoBanqueiro[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/AlgoritmoBanqueiro[00m$ [?2004l
+exit
+
+Script done on 2026-11-16 14:36:06-03:00 [COMMAND_EXIT_CODE="0"]
