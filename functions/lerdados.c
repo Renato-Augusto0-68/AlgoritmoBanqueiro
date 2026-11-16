@@ -127,6 +127,9 @@ int verificarConta(comandos *com,int **need,FILE *x, int *disponivel, dados *mat
             if(com->valores[i+1]<=(matcomp[com->valores[0]].informacoes[i]-need[com->valores[0]][i])){
                 quant++;
             }
+            if(com->valores[i+1]<0){
+                quant--;
+            }
         }
         if(quant!=matcomp->tamanho){
             for(int i=0;i<matcomp->tamanho;i++){    
@@ -252,7 +255,7 @@ void buscarDados(dados *matriz, int limit){
                 }
                 if(g < matriz->tamanho - 1) {
                 char virgula;
-                int val2=fscanf(arq, " %c", &virgula);
+                int val2=fscanf(arq, " %c,", &virgula);
                 if(val2!=1){
                     fprintf(stderr,"Falha por falta de virgula em customer.txt");
                     fclose(arq);
